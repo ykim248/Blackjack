@@ -16,12 +16,14 @@ namespace Blackjack.Models
         public Suit suit { get; set; }  //property to hold suit of card
         public Rank rank { get; set; }  //property to hold rank of card
         public Image cardImage { get; set; } //property to hold image of card
+        public int Value { get; set; } // added property
         // Constructor for the card class
        public Card(Suit suit, Rank rank, Image cardImage) 
         {
             this.suit = suit;
             this.rank = rank;
             this.cardImage = cardImage;
+            Value = (int)rank; // added value assignment
         }
 
         // Method to get the value of the card

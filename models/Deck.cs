@@ -21,7 +21,7 @@ namespace Blackjack.Models
             {
                 foreach (Card.Rank rank in Enum.GetValues(typeof(Card.Rank)))
                 {
-                    var image = Image.FromFile($"images/{suit.ToString()}.png");
+                    var image = Image.FromFile($"models/images/{suit.ToString()}.png");
                     _cards.Add(new Card(suit, rank, image));
                 }
             }

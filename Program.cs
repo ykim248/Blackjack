@@ -12,19 +12,13 @@ namespace Blackjack
         static void Main(string[] args)
         {
             // Create a new deck
-            Deck deck = new Deck();
+            var deck = new Deck();
+            var hand = new Hand();
+            hand.Cards.Add(deck.DrawCard());
+            
+            hand.Cards.Add(deck.DrawCard());
+            Console.WriteLine("Hand value: " + hand.CalculateHandValue());
 
-            // Shuffle the deck
-            deck.Shuffle();
-
-            // Draw a card from the deck
-            Card drawnCard = deck.DrawCard();
-
-            // Print the card's suit and rank
-            Console.WriteLine("Drawn card: " + drawnCard.suit + " of " + drawnCard.rank);
-
-            // Print the card's value
-            Console.WriteLine("Value: " + drawnCard.GetCardValue());
         }
     }
 }
