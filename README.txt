@@ -15,5 +15,3 @@ Project Progress
 
 All of these classes are stored in the Blackjack.Models namespace.
 
-Note that the above summary assumes that you have created these 
-classes and implemented their functionalities successfully.
