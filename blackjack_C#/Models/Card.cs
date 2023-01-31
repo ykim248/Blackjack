@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 
+
+
 namespace Blackjack.Models
 {
     public class Card
